@@ -6,6 +6,9 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
+
+  ## Our python ebooks will run here because it will be similar to the ..
+
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
@@ -13,6 +16,18 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/xenial64"
+
+  ## the reverse proxy will give me an entry into my run machine
+
+  config.vm.network "private_network", ip: "192.168.10.100"
+
+  ## Asking developer to go to an ip is not user friendly
+  ## let's give them a host with letters for them to access and view their ...
+
+  ## you need to install a vagrant pluggin
+  ## vagrant pluggin install vagrant-hostsupdater
+
+  config.hostsupdater.aliases = ["development.local"]
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
