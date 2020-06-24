@@ -1,5 +1,20 @@
 # Development Env and Vagrant 101
 
+This repo is a vagrant machine that instals nginx as well as expose it on an ip and host name.
+
+#### Installation
+
+To get this box running:
+1. clone the reproducible
+2. make sure you are on the root of the project and can see the vagrantfile 3. then run:
+```bash
+vagrant up
+```
+
+Now you can see nginx running on 2 locations:
+- ip: 192.168.10.100
+- development.local/
+
 #### What is an environment?
 An environment is a location where code runs and data lives.
 
