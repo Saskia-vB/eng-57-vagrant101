@@ -52,7 +52,6 @@ Package manager system is a collection of software tools that automates the proc
 Python Package Manager (PyPM) - pip
 
 
-
 ## what is ubuntu's package manager?
  Debian Package Management System, Red Hat Package Manager, Pacman Package Manager, Zypper Package Manager, Portage Package Manage
 
